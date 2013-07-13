@@ -67,6 +67,9 @@ That’s it! Enjoy using the plugin.
 
 == Changelog ==
 
+= 1.0.2 =
+* Small changes to readme.txt.
+
 = 1.0.1 =
 * Added uninstall.php.
 
