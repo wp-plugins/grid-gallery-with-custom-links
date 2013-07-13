@@ -4,9 +4,8 @@ Tags: gallery, galleries, grid, grid gallery, gallery links, image link, image l
 Requires at least: 3.5
 Tested up to: 3.5.2
 
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
-Copyright (c) 2013 abcFolio.com (email : info@abcfolio.com)
 
 
 Displays gallery images in a grid. You can add custom URLs and captions.
