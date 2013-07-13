@@ -4,7 +4,7 @@ Tags: gallery, galleries, grid, grid gallery, gallery links, image link, image l
 Requires at least: 3.5
 Tested up to: 3.5.2
 
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 
 
@@ -14,14 +14,12 @@ Displays gallery images in a grid. You can add custom URLs and captions.
 
 **Grid Gallery with Custom Links** displays gallery images in a grid.
 
-Overview
+With the Grid Gallery, you can easily add elegant navigation option to any theme.
 
 * Grid Gallery is completely customizable.
 * It's compatible with all browsers and mobile devices.
 * You can insert the gallery shortcode into any page or post you want.
 * You can add custom links and captions to each of the images.
-
-With the Grid Gallery, you can easily add elegant navigation option to any theme.
 
 If you have a WordPress gallery of images and need to link them to other pages, this plugin is for you!
 
@@ -65,7 +63,10 @@ How to install **Grid Gallery with Custom Links**
 
 That’s it! Enjoy using the plugin.
 
-== Changelog ==
+== Changelog
+
+= 1.0.3 =
+* More small changes to readme.txt.
 
 = 1.0.2 =
 * Small changes to readme.txt.
