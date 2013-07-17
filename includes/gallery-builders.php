@@ -47,9 +47,10 @@ function abcfggcl_gbldrs_get_items($postID, $layout, $imgFr, $imgAn, $itemTM, $i
     $post = get_post( $postID );
     $pCnt = $post->post_content;
 
-    if(empty($pCnt)) return '';
-    $gImgs = abcfggcl_gbldrs_get_gallery_imgs( $postID, $pCnt, $imgSize );
     $out = '';
+    if(empty($pCnt)) return $out;
+    $gImgs = abcfggcl_gbldrs_get_gallery_imgs( $postID, $pCnt, $imgSize );
+    if(empty($gImgs)) return;
 
     foreach($gImgs as $gImg){
         $imgUrl = $gImg['imgUrl'];
@@ -214,7 +215,18 @@ function abcfggcl_gbldrs_txt_align( $layout, $txtCntrCls ){
 
 function abcfggcl_gbldrs_get_gallery_imgs( $postID, $pCnt, $imgSize ) {
 
+    $pCnt = trim($pCnt);
+    $g = '[gallery ids=';
+    if(substr($pCnt, 0, 13) != $g) {
+        $pos = strpos($pCnt, $g);
+        if ($pos === false) {
+        echo __('Gallery shortcode is missing. Please add gallery to the Grid Gallery.', 'abcfggcl-td');
+        return array();
+        }
+    }
+
     $shortcodeArgs = shortcode_parse_atts(abcfggcl_gbldrs_get_regex_match('/\[gallery\s(.*)\]/isU', $pCnt));
+
     $ids = $shortcodeArgs['ids'];
     $attr = array(
         'include' => $ids,
@@ -224,7 +236,13 @@ function abcfggcl_gbldrs_get_gallery_imgs( $postID, $pCnt, $imgSize ) {
         'size'        => $imgSize
     );
 
-    return abcfmlcf_get_images($attr);
+    if (function_exists('abcfmlcf_get_images')) {
+        return abcfmlcf_get_images($attr);
+    }
+    else {
+        echo __('Required plugin is missing. Please install plugin: Media Library Custom Fields.', 'abcfggcl-td');
+        return array();
+    }
 
 }
 

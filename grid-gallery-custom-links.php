@@ -5,7 +5,7 @@
  * Description: Grid gallery with links to any page or post.
  * Author: abcFolio WordPress Themes for Photographers
  * Author URI: http://www.abcfolio.com
- * Version: 1.0.3
+ * Version: 1.0.4
  * Text Domain: abcfmlcf-td
  * Domain Path: /languages
  * License:     GPL-2.0+
@@ -15,7 +15,7 @@
  * @category Core
  * @author abcFolio WordPress Themes for Photographers
  * @license   GPL-2.0+
- * @version 1.0.3
+ * @version 1.0.4
 */
 
 if ( !defined( 'ABSPATH' ) ) exit;
@@ -38,7 +38,7 @@ final class ABCFGGCL_Grid_Gallery {
 
     private function plugin_constants() {
 
-        if( ! defined( 'ABCFGGCL_VERSION' ) ){ define( 'ABCFGGCL_VERSION', '1.0.0' ); }
+        if( ! defined( 'ABCFGGCL_VERSION' ) ){ define( 'ABCFGGCL_VERSION', '1.0.4' ); }
         // Plugin Folder URL
         if( ! defined( 'ABCFGGCL_PLUGIN_URL' ) ){ define( 'ABCFGGCL_PLUGIN_URL', plugin_dir_url( __FILE__ ) );}
         // Plugin Folder Path

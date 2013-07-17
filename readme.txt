@@ -4,7 +4,7 @@ Tags: gallery, galleries, grid, grid gallery, gallery links, image link, image l
 Requires at least: 3.5
 Tested up to: 3.5.2
 
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 
 
@@ -22,8 +22,6 @@ With the Grid Gallery, you can easily add elegant navigation option to any theme
 * You can add custom links and captions to each of the images.
 
 If you have a WordPress gallery of images and need to link them to other pages, this plugin is for you!
-
-Grid Gallery with Custom Links plugin is compatible with multisite.
 
 = User Guide =
 
@@ -45,7 +43,6 @@ Full documentation at [http://abcfolio.com/help/grid-gallery-with-custom-links/]
 This plugin requires **Media Library Custom Fields** plugin to be installed!
 Media Library Custom Fields is our free plugin available for download from WordPress Plugins Directory. It is tested and fully compatible with **Grid Gallery with Custom Links**.
 
-
 Installation
 
 1. Install and activate our free plugin **Media Library Custom Fields**. You can get it from http://wordpress.org/plugins/media-library-custom-fields/
@@ -63,7 +60,10 @@ How to install **Grid Gallery with Custom Links**
 
 That’s it! Enjoy using the plugin.
 
-== Changelog
+== Changelog ==
+
+= 1.0.4 =
+* Added error handlers to abcfggcl_gbldrs_get_gallery_imgs: check for required plugin, check for gallery shortcode.
 
 = 1.0.3 =
 * More small changes to readme.txt.
