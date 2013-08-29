@@ -6,7 +6,7 @@
 function abcfggcl_gbldrs_get_pg($customPostID) {
 
     $divItems = '';
-    $cls = 'ggclCtnr';
+    $cls = 'ggclCtnr gg105';
     $style = '';
 
     $optns = get_post_custom( $customPostID );
@@ -18,31 +18,24 @@ function abcfggcl_gbldrs_get_pg($customPostID) {
     $itemTM = isset( $optns['_abcfggcl_item_tm'] ) ? esc_attr( $optns['_abcfggcl_item_tm'][0] ) : '';
     $imgFr = isset( $optns['_abcfggcl_img_fr'] ) ? esc_attr( $optns['_abcfggcl_img_fr'][0] ) : '';
     $imgAn = isset( $optns['_abcfggcl_img_annimate'] ) ? esc_attr( $optns['_abcfggcl_img_annimate'][0] ) : '';
-    $layout = isset( $optns['_abcfggcl_layout'] ) ? esc_attr( $optns['_abcfggcl_layout'][0] ) : '';
+    $layout = isset( $optns['_abcfggcl_layout'] ) ? esc_attr( $optns['_abcfggcl_layout'][0] ) : '1';
     $imgSize = isset( $optns['_abcfggcl_img_size'] ) ? esc_attr( $optns['_abcfggcl_img_size'][0] ) : '';
     $skin = isset( $optns['_abcfggcl_skin'] ) ? esc_attr( $optns['_abcfggcl_skin'][0] ) : 'W';
 
     $h4Style = '';
-    $lnkClr = '';
-    $h5Style = '';
-    $descStyle = '';
-
     $h4Style = abcfggcl_lib_css_style_tag($h4Style);
-    $h5Style = abcfggcl_lib_css_style_tag($h5Style);
-    $descStyle = abcfggcl_lib_css_style_tag($descStyle);
 
-    $items = abcfggcl_gbldrs_get_items($customPostID, $layout, $imgFr, $imgAn, $itemTM, $itemLM, $imgSize, $skin, $h4Style, $lnkClr, $h5Style, $descStyle);
+    $items = abcfggcl_gbldrs_get_items($customPostID, $layout, $imgFr, $imgAn, $itemTM, $itemLM, $imgSize, $skin, $h4Style);
 
     $style = abcfggcl_lib_css_wh($cntrW, $cntrH) . abcfggcl_lib_css_ptl($cntrTM, $cntrLM);
     $style = abcfggcl_lib_css_style_tag($style);
 
     if(!empty($items)) { $divItems = '<div id="equalH" class="' . $cls . '"' . $style . '>' . $items . '<div class="ggclClr"></div></div>'; }
     $js = '<script type="text/javascript">jQuery(function(){ jQuery("#equalH").equalHs(); });</script>';
-
     return $divItems . ' ' . $js;
 }
 
-function abcfggcl_gbldrs_get_items($postID, $layout, $imgFr, $imgAn, $itemTM, $itemLM, $imgSize, $skin, $h4Style, $lnkClr, $h5Style, $descStyle){
+function abcfggcl_gbldrs_get_items($postID, $layout, $imgFr, $imgAn, $itemTM, $itemLM, $imgSize, $skin, $h4Style){
 
     $post = get_post( $postID );
     $pCnt = $post->post_content;
@@ -50,6 +43,7 @@ function abcfggcl_gbldrs_get_items($postID, $layout, $imgFr, $imgAn, $itemTM, $i
     $out = '';
     if(empty($pCnt)) return $out;
     $gImgs = abcfggcl_gbldrs_get_gallery_imgs( $postID, $pCnt, $imgSize );
+
     if(empty($gImgs)) return;
 
     foreach($gImgs as $gImg){
@@ -61,29 +55,22 @@ function abcfggcl_gbldrs_get_items($postID, $layout, $imgFr, $imgAn, $itemTM, $i
         $linkTarget = $gImg['linkTarget'];
         $title = $gImg['title'];
         $cap1 = $gImg['cap1'];
-        $cap2 = $gImg['cap2'];
-        $cap3 = $gImg['cap3'];
-        $cap4 = $gImg['cap4'];
-        $desc = $gImg['desc'];
-        $imgID = $gImg['imgID'];
 
-        $imgTag = abcfggcl_lib_htmlbldr_img_tag( $imgID, $imgUrl, $alt, $title, $imgW, $imgH );
-        $out .= abcfggcl_gbldrs_build_item( $imgID, $imgFr, $imgAn, $itemTM, $itemLM, $cap1, $cap2, $cap3, $cap4, $desc, $linkUrl, $linkTarget, $imgW, $imgTag,
-                                            $layout, $skin, $h4Style, $lnkClr, $h5Style, $descStyle );
+        $imgTag = abcfggcl_lib_htmlbldr_img_tag('', $imgUrl, $alt, $title, $imgW, $imgH );
+        $out .= abcfggcl_gbldrs_build_item( $imgFr, $imgAn, $itemTM, $itemLM, $cap1, $linkUrl, $linkTarget, $imgW, $imgTag, $layout, $skin, $h4Style );
     }
 
     return $out;
  }
 
 //-----------------------------------------------------------------------
-function abcfggcl_gbldrs_build_item($imgID, $imgFr, $imgAn, $itemTM, $itemLM, $cap1, $cap2, $cap3, $cap4, $desc, $linkUrl, $linkTarget, $imgW, $imgTag,
-        $layout, $skin, $h4Style, $lnkClr, $h5Style, $descStyle){
+function abcfggcl_gbldrs_build_item($imgFr, $imgAn, $itemTM, $itemLM, $cap1, $linkUrl, $linkTarget, $imgW, $imgTag, $layout, $skin, $h4Style ){
 
     $hasTxt = 1;
     $txtDiv = '';
-    if(abcfggcl_lib_isblank($cap1) & abcfggcl_lib_isblank($cap2) & abcfggcl_lib_isblank($cap3) & abcfggcl_lib_isblank($cap4)){ $hasTxt = 0; }
+    if(abcfggcl_lib_isblank($cap1)){ $hasTxt = 0; }
 
-    $cls = 'ggclItemCntr ggclItem_'. $imgID;
+    $cls = 'ggclItemCntr';
     $style = abcfggcl_lib_cssbldr_style_margin_tl($itemTM, $itemLM);
     $cntrS = '<div class="' . $cls . '"' . $style . '>';
     $cntrE = '</div>';
@@ -92,20 +79,7 @@ function abcfggcl_gbldrs_build_item($imgID, $imgFr, $imgAn, $itemTM, $itemLM, $c
 
     if($hasTxt === 1){
         $cap1 = esc_attr($cap1);
-        $cap2 = esc_attr($cap2);
-        $cap3 = esc_attr($cap3);
-        $cap4 = esc_attr($cap4);
-        $desc = wptexturize($desc);
-
-        switch ($layout){
-            case '1':
-            case '2':
-            case '3':
-                $txtDiv = abcfggcl_gbldrs_build_txt_div_multiline($cap1, $cap2, $cap3, $cap4, $linkUrl, $linkTarget, $imgW, $imgFr, $layout, $skin, $h4Style, $lnkClr, $h5Style);
-                break;
-            default:
-                break;
-        }
+        $txtDiv = abcfggcl_gbldrs_build_txt_div_multiline($cap1, $linkUrl, $linkTarget, $imgW, $layout, $h4Style );
     }
 
     return $cntrS . $imgDiv . $txtDiv . $cntrE;
@@ -132,28 +106,8 @@ function abcfggcl_gbldrs_build_img_div($skin, $imgFr, $imgAn, $imgTag, $linkUrl,
     }
 
     $clsFr = '';
-    switch ($imgFr){
-    case 'B':
-        $clsFr = 'ggclImgB_' . $skin . ' ';
-        break;
-    case 'S':
-        if($skin == 'W') { $clsFr = 'ggclImgS_W '; }
-        break;
-    case 'F':
-        $clsFr = 'ggclImgFr_' . $skin . ' ';
-        $frS = '<div class="ggclImgFrBr_' . $skin . '">';
-        $frE = '</div>';
-        break;
-    case 'F5':
-        $clsFr = 'ggclImgFr5_' . $skin . ' ';;
-        $frS = '<div class="ggclImgFrBr_' . $skin . '">';
-        $frE = '</div>';
-        break;
-    default:
-        break;
-    }
-
-    $clsImg = 'ggclImg ' . $clsFr . $clsA;
+    if($imgFr == 'B') { $clsFr = 'ggclImgB_' . $skin . ' '; }
+    $clsImg = trim('ggclImg ' . $clsFr . $clsA);
 
     $aTag = abcfggcl_lib_htmlbldr_html_a_tag($linkUrl, $imgTag, $linkTarget, '','', '', false);
     $img = $frS . '<div class="' . $clsImg . '">' . $aTag . '</div>' . $frE;
@@ -161,7 +115,7 @@ function abcfggcl_gbldrs_build_img_div($skin, $imgFr, $imgAn, $imgTag, $linkUrl,
     return $img;
  }
 
-function abcfggcl_gbldrs_build_txt_div_multiline($cap1, $cap2, $cap3, $cap4, $linkUrl, $linkTarget, $imgW, $imgFr, $layout, $skin, $h4Style, $lnkClr, $h5Style){
+function abcfggcl_gbldrs_build_txt_div_multiline($cap1, $linkUrl, $linkTarget, $imgW, $layout, $h4Style ){
 
     $txtCntrCls = 'ggclTxtMlCntr';
     $txtCntrW = $imgW;
@@ -170,27 +124,18 @@ function abcfggcl_gbldrs_build_txt_div_multiline($cap1, $cap2, $cap3, $cap4, $li
     $cls = abcfggcl_lib_css_class_tag($txtCntrCls . ' ' . $txtCntrCls2 );
     $style = abcfggcl_lib_css_style_tag(abcfggcl_lib_css_w($txtCntrW));
     $cntrS = abcfggcl_lib_htmlbldr_div_cls_style( $cls, $style );
+    $l1 = '';
 
-     $l1 = '';
-     $l2 = '';
-     $l3 = '';
-     $l4 = '';
-
-     $l1 = abcfggcl_gbldrs_build_txt_h4($cap1, $linkUrl, $linkTarget, $h4Style, $lnkClr );
-
-     if(!abcfggcl_lib_isblank($cap2)){ $l2 = '<p' . $h5Style . '>' . $cap2 . '</p>'; }
-     if(!abcfggcl_lib_isblank($cap3)){ $l3 = '<p' . $h5Style . '>' . $cap3 . '</p>'; }
-     if(!abcfggcl_lib_isblank($cap4)){ $l4 = '<p' . $h5Style . '>' . $cap4 . '</p>'; }
-
-     return  $cntrS . $l1 . $l2 . $l3 . $l4 . '</div>';
+    $l1 = abcfggcl_gbldrs_build_txt_h4($cap1, $linkUrl, $linkTarget, $h4Style );
+    return  $cntrS . $l1 . '</div>';
 }
 
 //-----------------------------------------------------------------------
-function abcfggcl_gbldrs_build_txt_h4($cap1, $linkUrl, $linkTarget, $h4Style, $lnkClr ){
+function abcfggcl_gbldrs_build_txt_h4($cap1, $linkUrl, $linkTarget, $h4Style ){
 
     if(abcfggcl_lib_isblank($cap1)){ return '';}
 
-    $aTag = abcfggcl_lib_htmlbldr_html_a_tag($linkUrl, $cap1, $linkTarget, '', '', $lnkClr, false);
+    $aTag = abcfggcl_lib_htmlbldr_html_a_tag($linkUrl, $cap1, $linkTarget, '', '', '', false);
     return '<h4' . $h4Style . '>' . $aTag . '</h4>';
 }
 
@@ -216,16 +161,21 @@ function abcfggcl_gbldrs_txt_align( $layout, $txtCntrCls ){
 function abcfggcl_gbldrs_get_gallery_imgs( $postID, $pCnt, $imgSize ) {
 
     $pCnt = trim($pCnt);
-    $g = '[gallery ids=';
-    if(substr($pCnt, 0, 13) != $g) {
+    $g = '[gallery';
+    if(substr($pCnt, 0, 8) != $g) {
         $pos = strpos($pCnt, $g);
         if ($pos === false) {
-        echo __('Gallery shortcode is missing. Please add gallery to the Grid Gallery.', 'abcfggcl-td');
+        echo __('WordPress Gallery shortcode is missing. Please add WordPress Gallery to the Grid Gallery.', 'abcfggcl-td');
         return array();
         }
     }
 
     $shortcodeArgs = shortcode_parse_atts(abcfggcl_gbldrs_get_regex_match('/\[gallery\s(.*)\]/isU', $pCnt));
+
+    if(!array_key_exists( 'ids', $shortcodeArgs )){
+       echo __('Error: WordPress Gallery shortcode has no picture IDs.', 'abcfggcl-td');
+       return array();
+    }
 
     $ids = $shortcodeArgs['ids'];
     $attr = array(

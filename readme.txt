@@ -1,10 +1,10 @@
 === Grid Gallery with Custom Links ===
 Contributors: jasiu
-Tags: gallery, galleries, grid, grid gallery, gallery links, image link, image links
+Tags: gallery, galleries, responsive, responsive gallery, grid, grid gallery, gallery links, image link, image links
 Requires at least: 3.5
-Tested up to: 3.5.2
+Tested up to: 3.6
 
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 
 
@@ -16,7 +16,7 @@ Displays gallery images in a grid. You can add custom URLs and captions.
 
 With the Grid Gallery, you can easily add elegant navigation option to any theme.
 
-* Grid Gallery is completely customizable.
+* Grid Gallery can be customized.
 * It's compatible with all browsers and mobile devices.
 * You can insert the gallery shortcode into any page or post you want.
 * You can add custom links and captions to each of the images.
@@ -31,9 +31,12 @@ Full documentation at [http://abcfolio.com/help/grid-gallery-with-custom-links/]
 
 [Grid Gallery with Custom Links Pro](http://abcfolio.com/help/wordpress-plugin-grid-gallery-with-custom-links-pro/) premium version offers these extra features:
 
+* **Responsive**, when used with responsive themes. [Preview.](http://abcfolio.com/demos/responsive/responsive-live-preview/)
 * Additional text layouts. [Preview.](http://abcfolio.com/help/wordpress-plugin-grid-gallery-with-custom-links-pro-text-layout/)
 * Long description field.
 * Additional visual options: image frames and dropshadow. [Preview.](http://abcfolio.com/help/wordpress-plugin-grid-gallery-with-custom-links-pro-image-borders/)
+* You can have multiple instances of the Grid Gallery on a page
+* Completely customizable. You can add your own custom CSS file.
 * Priority support.
 
 [Visit our Premium page.](http://abcfolio.com/help/wordpress-plugin-grid-gallery-with-custom-links-pro/)
@@ -62,8 +65,14 @@ That’s it! Enjoy using the plugin.
 
 == Changelog ==
 
+= 1.0.5 =
+* Added no image IDs error handler.
+* Updated Layout dropdown options.
+* Fixed a few bugs.
+* Tested with WordPress 3.6.
+
 = 1.0.4 =
-* Added error handlers to abcfggcl_gbldrs_get_gallery_imgs: check for required plugin, check for gallery shortcode.
+* Added error handlers to abcfggcl_gbldrs_get_gallere.y_imgs: check for required plugin, check for gallery shortcode.
 
 = 1.0.3 =
 * More small changes to readme.txt.

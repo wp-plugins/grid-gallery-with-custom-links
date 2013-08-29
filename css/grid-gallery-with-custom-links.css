@@ -1,6 +1,6 @@
 /*--Images---------------------------------------------------------*/
 .ggclCtnr { position: relative; }
-.ggclItemCntr { float: left; margin-top: 20px; margin-left: 20px; }
+.ggclItemCntr { float: left; margin-top: 20px; margin-left: 20px; position: relative; }
 .ggclImg { overflow: hidden; position: relative; text-align: center; line-height: 0;}
 .ggclImg img { -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
 .ggclImgFd img:hover { zoom:1; filter: alpha(opacity=70); opacity:0.7; transition-delay: 0.5s; }
@@ -31,3 +31,4 @@
 .ggclImgBkgW { background-color: #FFFFFF; }
 .ggclClr{ clear: both; font-size: 1px; margin: 0; padding: 0; border: 0; height: 0;}
 /*--PLUGIN-END---------------------------------------------------------*/
+

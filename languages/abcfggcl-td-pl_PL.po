@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Grid Gallery with Custom Links v1.0.4\n"
+"Project-Id-Version: Grid Gallery with Custom Links v1.0.54\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-07-17 02:23:09+0000\n"
+"PO-Revision-Date: 2013-08-28 15:48:38+0000\n"
 "Last-Translator: admin <abcfolio@live.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -140,21 +140,6 @@ msgstr "Duży"
 msgid "Full Size"
 msgstr "Pełny rozmiar"
 
-#: admin/input-builders.php:114
-#@ abcfggcl-td
-msgid "1. Multiline. Left aligned."
-msgstr "1. Osobne linie. Text wyrównany do lewej."
-
-#: admin/input-builders.php:115
-#@ abcfggcl-td
-msgid "2. Multiline. Right aligned."
-msgstr "2. Osobne linie. Text wyrównany do prawej."
-
-#: admin/input-builders.php:116
-#@ abcfggcl-td
-msgid "3. Multiline. Centered."
-msgstr "3. Osobne linie. Text scentroway."
-
 #: admin/input-builders.php:121
 #: admin/input-builders.php:127
 #@ abcfggcl-td
@@ -275,19 +260,39 @@ msgstr ""
 msgid "http://www.abcfolio.com"
 msgstr ""
 
-#. translators: plugin header field 'Version'
-#: grid-gallery-custom-links.php:0
-#@ abcfggcl-td
-msgid "1.0.4"
-msgstr ""
-
-#: includes/gallery-builders.php:223
-#@ abcfggcl-td
-msgid "Gallery shortcode is missing. Please add gallery to the Grid Gallery."
-msgstr "Brakuje shortcode galleri, Dodaj galerię do Grid Gallery."
-
-#: includes/gallery-builders.php:243
+#: includes/gallery-builders.php:193
 #@ abcfggcl-td
 msgid "Required plugin is missing. Please install plugin: Media Library Custom Fields."
 msgstr "Wtyczka Media Library Custom Fields nie jest zainstalowana. Zainstaluj wtyczkę."
+
+#: admin/input-builders.php:114
+#@ abcfggcl-td
+msgid "Left aligned."
+msgstr "Text wyrównany do lewej."
+
+#: admin/input-builders.php:115
+#@ abcfggcl-td
+msgid "Right aligned."
+msgstr "Text wyrównany do prawej."
+
+#: admin/input-builders.php:116
+#@ abcfggcl-td
+msgid "Centered."
+msgstr "Text scentroway."
+
+#. translators: plugin header field 'Version'
+#: grid-gallery-custom-links.php:0
+#@ abcfggcl-td
+msgid "1.0.54"
+msgstr ""
+
+#: includes/gallery-builders.php:168
+#@ abcfggcl-td
+msgid "WordPress Gallery shortcode is missing. Please add WordPress Gallery to the Grid Gallery."
+msgstr "Brakuje shortcode WordPress galleri, Dodaj WordPress galerię do Grid Gallery."
+
+#: includes/gallery-builders.php:176
+#@ abcfggcl-td
+msgid "Error: WordPress Gallery shortcode has no picture IDs."
+msgstr "Błąd: Shortcode WordPress galleia nie ma numerów obrazków."
 

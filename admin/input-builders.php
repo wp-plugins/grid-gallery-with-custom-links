@@ -111,9 +111,9 @@ function abcfggcl_inputbldr_cbo_skin() {
 }
 
 function abcfggcl_inputbldr_cbo_pg_layout() {
-    return array('1' => __('1. Multiline. Left aligned.', 'abcfggcl-td'),
-                '2'  => __('2. Multiline. Right aligned.', 'abcfggcl-td'),
-                '3'  => __('3. Multiline. Centered.', 'abcfggcl-td')
+    return array('1' => __('Left aligned.', 'abcfggcl-td'),
+                '2'  => __('Right aligned.', 'abcfggcl-td'),
+                '3'  => __('Centered.', 'abcfggcl-td')
                 );
 }
 
