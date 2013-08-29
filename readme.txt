@@ -1,6 +1,6 @@
 === Grid Gallery with Custom Links ===
 Contributors: jasiu
-Tags: gallery, galleries, responsive, responsive gallery, grid, grid gallery, gallery links, image link, image links
+Tags: gallery, galleries, responsive, responsive gallery, grid, grid gallery, gallery links, image links
 Requires at least: 3.5
 Tested up to: 3.6
 
@@ -35,7 +35,7 @@ Full documentation at [http://abcfolio.com/help/grid-gallery-with-custom-links/]
 * Additional text layouts. [Preview.](http://abcfolio.com/help/wordpress-plugin-grid-gallery-with-custom-links-pro-text-layout/)
 * Long description field.
 * Additional visual options: image frames and dropshadow. [Preview.](http://abcfolio.com/help/wordpress-plugin-grid-gallery-with-custom-links-pro-image-borders/)
-* You can have multiple instances of the Grid Gallery on a page
+* You can have multiple instances of the Grid Gallery on a page.
 * Completely customizable. You can add your own custom CSS file.
 * Priority support.
 
