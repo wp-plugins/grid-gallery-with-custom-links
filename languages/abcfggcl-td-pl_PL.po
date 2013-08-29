@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Grid Gallery with Custom Links v1.0.54\n"
+"Project-Id-Version: Grid Gallery with Custom Links v1.0.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-08-28 15:48:38+0000\n"
+"PO-Revision-Date: 2013-08-29 03:15:00+0000\n"
 "Last-Translator: admin <abcfolio@live.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -280,12 +280,6 @@ msgstr "Text wyrównany do prawej."
 msgid "Centered."
 msgstr "Text scentroway."
 
-#. translators: plugin header field 'Version'
-#: grid-gallery-custom-links.php:0
-#@ abcfggcl-td
-msgid "1.0.54"
-msgstr ""
-
 #: includes/gallery-builders.php:168
 #@ abcfggcl-td
 msgid "WordPress Gallery shortcode is missing. Please add WordPress Gallery to the Grid Gallery."
@@ -295,4 +289,10 @@ msgstr "Brakuje shortcode WordPress galleri, Dodaj WordPress galerię do Grid Ga
 #@ abcfggcl-td
 msgid "Error: WordPress Gallery shortcode has no picture IDs."
 msgstr "Błąd: Shortcode WordPress galleia nie ma numerów obrazków."
+
+#. translators: plugin header field 'Version'
+#: grid-gallery-custom-links.php:0
+#@ abcfggcl-td
+msgid "1.0.5"
+msgstr "1.0.5"
 
