@@ -3,20 +3,31 @@
  * Plugin Name: Grid Gallery with Custom Links
  * Plugin URI: http://abcfolio.com/help/grid-gallery-with-custom-links/
  * Description: Grid gallery with links to any page or post.
- * Author: abcFolio WordPress Themes for Photographers
+ * Author: abcFolio WordPress Plugins
  * Author URI: http://www.abcfolio.com
- * Version: 1.0.5
- * Text Domain: abcfmlcf-td
+ * Version: 1.0.6
+ * Text Domain: abcfggcl-td
  * Domain Path: /languages
- * License:     GPL-2.0+
- * License URI: http://www.gnu.org/licenses/
+ *
+ * Grid Gallery with Custom Links is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * any later version.
+ *
+ * Grid Gallery with Custom Links is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Grid Gallery with Custom Links. If not, see <http://www.gnu.org/licenses/>.
  *
  * @package Grid Gallery with Custom Links
  * @category Core
- * @author abcFolio WordPress Themes for Photographers
- * @license   GPL-2.0+
- * @version 1.0.5
+ * @author abcFolio WordPress Plugins
+ * @version 1.0.6
 */
+
 
 if ( !defined( 'ABSPATH' ) ) exit;
 if ( !class_exists( 'ABCFGGCL_Grid_Gallery' ) ) :
@@ -38,7 +49,7 @@ final class ABCFGGCL_Grid_Gallery {
 
     private function plugin_constants() {
 
-        if( ! defined( 'ABCFGGCL_VERSION' ) ){ define( 'ABCFGGCL_VERSION', '1.0.5' ); }
+        if( ! defined( 'ABCFGGCL_VERSION' ) ){ define( 'ABCFGGCL_VERSION', '1.0.6' ); }
         // Plugin Folder URL
         if( ! defined( 'ABCFGGCL_PLUGIN_URL' ) ){ define( 'ABCFGGCL_PLUGIN_URL', plugin_dir_url( __FILE__ ) );}
         // Plugin Folder Path

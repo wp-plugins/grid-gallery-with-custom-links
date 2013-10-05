@@ -1,7 +1,6 @@
 <?php
 /**
- * Meta box: Post Options
- *
+ * Meta box: Options
  */
 
 add_action( 'add_meta_boxes', 'abcfggcl_add_mbox_post_optns', 10, 2 );

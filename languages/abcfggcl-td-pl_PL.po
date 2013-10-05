@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Grid Gallery with Custom Links v1.0.5\n"
+"Project-Id-Version: Grid Gallery with Custom Links v1.0.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-08-29 03:15:00+0000\n"
+"PO-Revision-Date: 2013-10-05 16:58:15+0000\n"
 "Last-Translator: admin <abcfolio@live.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -166,7 +166,7 @@ msgstr "Przyciemnienie"
 msgid "Scale"
 msgstr "Powiększenie"
 
-#: admin/mbox-post-options.php:14
+#: admin/mbox-post-options.php:13
 #@ abcfggcl-td
 msgid "Options"
 msgstr "Opcje"
@@ -182,32 +182,32 @@ msgstr "Shortcode"
 msgid "Help"
 msgstr "Pomoc"
 
-#: includes/post-types.php:14
+#: includes/post-types.php:13
 #@ abcfggcl-td
 msgid "Add New"
 msgstr "Dodaj nowy"
 
-#: includes/post-types.php:18
+#: includes/post-types.php:17
 #@ abcfggcl-td
 msgid "Grid Galleries"
 msgstr "Galerie"
 
-#: includes/post-types.php:19
+#: includes/post-types.php:18
 #@ abcfggcl-td
 msgid "Search"
 msgstr "Wyszukiwanie"
 
-#: includes/post-types.php:20
+#: includes/post-types.php:19
 #@ abcfggcl-td
 msgid "No records found"
 msgstr "Nic ne znaleziono"
 
-#: includes/post-types.php:21
+#: includes/post-types.php:20
 #@ abcfggcl-td
 msgid "No records found in the Trash"
 msgstr "Nic ne znaleziono w koszu"
 
-#: includes/post-types.php:17
+#: includes/post-types.php:16
 #@ abcfggcl-td
 msgid "New"
 msgstr "Nowy"
@@ -229,9 +229,9 @@ msgstr "Czarna - na ciemne strony."
 
 #. translators: plugin header field 'Name'
 #: grid-gallery-custom-links.php:0
-#: includes/post-types.php:13
+#: includes/post-types.php:12
+#: includes/post-types.php:14
 #: includes/post-types.php:15
-#: includes/post-types.php:16
 #@ abcfggcl-td
 msgid "Grid Gallery with Custom Links"
 msgstr ""
@@ -248,19 +248,13 @@ msgstr ""
 msgid "Grid gallery with links to any page or post."
 msgstr ""
 
-#. translators: plugin header field 'Author'
-#: grid-gallery-custom-links.php:0
-#@ abcfggcl-td
-msgid "abcFolio WordPress Themes for Photographers"
-msgstr ""
-
 #. translators: plugin header field 'AuthorURI'
 #: grid-gallery-custom-links.php:0
 #@ abcfggcl-td
 msgid "http://www.abcfolio.com"
 msgstr ""
 
-#: includes/gallery-builders.php:193
+#: includes/gallery-builders.php:192
 #@ abcfggcl-td
 msgid "Required plugin is missing. Please install plugin: Media Library Custom Fields."
 msgstr "Wtyczka Media Library Custom Fields nie jest zainstalowana. Zainstaluj wtyczkę."
@@ -280,19 +274,25 @@ msgstr "Text wyrównany do prawej."
 msgid "Centered."
 msgstr "Text scentroway."
 
-#: includes/gallery-builders.php:168
+#: includes/gallery-builders.php:167
 #@ abcfggcl-td
 msgid "WordPress Gallery shortcode is missing. Please add WordPress Gallery to the Grid Gallery."
 msgstr "Brakuje shortcode WordPress galleri, Dodaj WordPress galerię do Grid Gallery."
 
-#: includes/gallery-builders.php:176
+#: includes/gallery-builders.php:175
 #@ abcfggcl-td
 msgid "Error: WordPress Gallery shortcode has no picture IDs."
 msgstr "Błąd: Shortcode WordPress galleia nie ma numerów obrazków."
 
+#. translators: plugin header field 'Author'
+#: grid-gallery-custom-links.php:0
+#@ abcfggcl-td
+msgid "abcFolio WordPress Plugins"
+msgstr ""
+
 #. translators: plugin header field 'Version'
 #: grid-gallery-custom-links.php:0
 #@ abcfggcl-td
-msgid "1.0.5"
-msgstr "1.0.5"
+msgid "1.0.6"
+msgstr ""
 

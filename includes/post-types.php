@@ -1,7 +1,6 @@
 <?php
 /**
  * Custom post types setup
- *
 */
 
 // Exit if accessed directly

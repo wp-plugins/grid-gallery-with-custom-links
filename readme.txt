@@ -1,12 +1,13 @@
 === Grid Gallery with Custom Links ===
+Author URI: http://www.abcfolio.com
+Plugin URI: http://abcfolio.com/help/grid-gallery-with-custom-links/
 Contributors: jasiu
-Tags: gallery, galleries, responsive, responsive gallery, grid, grid gallery, gallery links, image links
+Tags: gallery, galleries, responsive, responsive gallery, grid, grid gallery, gallery links, image links, abcfolio
 Requires at least: 3.5
 Tested up to: 3.6
 
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
-
 
 Displays gallery images in a grid. You can add custom URLs and captions.
 
@@ -34,8 +35,11 @@ Full documentation at [http://abcfolio.com/help/grid-gallery-with-custom-links/]
 * **Responsive**, when used with responsive themes. [Preview.](http://abcfolio.com/demos/responsive/responsive-live-preview/)
 * Additional text layouts. [Preview.](http://abcfolio.com/help/wordpress-plugin-grid-gallery-with-custom-links-pro-text-layout/)
 * Long description field.
-* Additional visual options: image frames and dropshadow. [Preview.](http://abcfolio.com/help/wordpress-plugin-grid-gallery-with-custom-links-pro-image-borders/)
+* Additional visual options: image frames and drop shadow. [Preview.](http://abcfolio.com/help/wordpress-plugin-grid-gallery-with-custom-links-pro-image-borders/)
+* Different image sizes. [Preview.](http://abcfolio.com/demos/wordpress-grid-gallery/ggp-different-heights/)
+* Crossfade on hover. [Preview.](http://abcfolio.com/demos/wordpress-grid-gallery/ggclp-hover-fade/)
 * You can have multiple instances of the Grid Gallery on a page.
+* You can add JavaScript to onclick event.
 * Completely customizable. You can add your own custom CSS file.
 * Priority support.
 
@@ -65,8 +69,11 @@ That’s it! Enjoy using the plugin.
 
 == Changelog ==
 
+= 1.0.6 =
+* Modified JavaScript.
+
 = 1.0.5 =
-* Added no image IDs error handler.
+* New: Added no image IDs error handler.
 * Updated Layout dropdown options.
 * Fixed a few bugs.
 * Tested with WordPress 3.6.

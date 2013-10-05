@@ -1,12 +1,11 @@
 <?php
 /**
  * Gallery builders
- *
 */
 function abcfggcl_gbldrs_get_pg($customPostID) {
 
     $divItems = '';
-    $cls = 'ggclCtnr gg105';
+    $cls = 'ggclCtnr gg106';
     $style = '';
 
     $optns = get_post_custom( $customPostID );
@@ -31,7 +30,7 @@ function abcfggcl_gbldrs_get_pg($customPostID) {
     $style = abcfggcl_lib_css_style_tag($style);
 
     if(!empty($items)) { $divItems = '<div id="equalH" class="' . $cls . '"' . $style . '>' . $items . '<div class="ggclClr"></div></div>'; }
-    $js = '<script type="text/javascript">jQuery(function(){ jQuery("#equalH").equalHs(); });</script>';
+    $js = '<script type="text/javascript">jQuery(window).load(function(){ jQuery("#equalH").equalHs(); });</script>';
     return $divItems . ' ' . $js;
 }
 
@@ -196,7 +195,6 @@ function abcfggcl_gbldrs_get_gallery_imgs( $postID, $pCnt, $imgSize ) {
 
 }
 
-// Return first regex match
 function abcfggcl_gbldrs_get_regex_match( $regex, $content ) {
     $matches = array();
     preg_match($regex, $content, $matches);
