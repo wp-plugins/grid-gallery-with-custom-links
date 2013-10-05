@@ -6,7 +6,7 @@ Tags: gallery, galleries, responsive, responsive gallery, grid, grid gallery, ga
 Requires at least: 3.5
 Tested up to: 3.6
 
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 
 Displays gallery images in a grid. You can add custom URLs and captions.
@@ -68,6 +68,9 @@ How to install **Grid Gallery with Custom Links**
 That’s it! Enjoy using the plugin.
 
 == Changelog ==
+
+= 1.0.7 =
+* Added missing JavaScript file.
 
 = 1.0.6 =
 * Modified JavaScript.

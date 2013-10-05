@@ -5,7 +5,7 @@
 function abcfggcl_gbldrs_get_pg($customPostID) {
 
     $divItems = '';
-    $cls = 'ggclCtnr gg106';
+    $cls = 'ggclCtnr gg107';
     $style = '';
 
     $optns = get_post_custom( $customPostID );

@@ -5,7 +5,7 @@
  * Description: Grid gallery with links to any page or post.
  * Author: abcFolio WordPress Plugins
  * Author URI: http://www.abcfolio.com
- * Version: 1.0.6
+ * Version: 1.0.7
  * Text Domain: abcfggcl-td
  * Domain Path: /languages
  *
@@ -25,7 +25,7 @@
  * @package Grid Gallery with Custom Links
  * @category Core
  * @author abcFolio WordPress Plugins
- * @version 1.0.6
+ * @version 1.0.7
 */
 
 
@@ -49,7 +49,7 @@ final class ABCFGGCL_Grid_Gallery {
 
     private function plugin_constants() {
 
-        if( ! defined( 'ABCFGGCL_VERSION' ) ){ define( 'ABCFGGCL_VERSION', '1.0.6' ); }
+        if( ! defined( 'ABCFGGCL_VERSION' ) ){ define( 'ABCFGGCL_VERSION', '1.0.7' ); }
         // Plugin Folder URL
         if( ! defined( 'ABCFGGCL_PLUGIN_URL' ) ){ define( 'ABCFGGCL_PLUGIN_URL', plugin_dir_url( __FILE__ ) );}
         // Plugin Folder Path
