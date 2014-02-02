@@ -17,7 +17,7 @@ function abcfggcl_enq_styles() {
 add_action( 'wp_enqueue_scripts', 'abcfggcl_enq_styles', 10000 );
 
 function abcfggcl_enq_admin_style() {
-    wp_register_style('ggcl-admin', ABCFGGCL_PLUGIN_URL . '/css/admin.css', ABCFGGCL_VERSION, 'all');
+    wp_register_style('ggcl-admin', ABCFGGCL_PLUGIN_URL . 'css/admin.css', ABCFGGCL_VERSION, 'all');
     wp_enqueue_style('ggcl-admin');
 }
 add_action( 'admin_enqueue_scripts', 'abcfggcl_enq_admin_style', 100 );

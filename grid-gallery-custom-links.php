@@ -5,7 +5,7 @@
  * Description: Grid gallery with links to any page or post.
  * Author: abcFolio WordPress Plugins
  * Author URI: http://www.abcfolio.com
- * Version: 1.0.7
+ * Version: 1.0.8
  * Text Domain: abcfggcl-td
  * Domain Path: /languages
  *
@@ -22,10 +22,6 @@
  * You should have received a copy of the GNU General Public License
  * along with Grid Gallery with Custom Links. If not, see <http://www.gnu.org/licenses/>.
  *
- * @package Grid Gallery with Custom Links
- * @category Core
- * @author abcFolio WordPress Plugins
- * @version 1.0.7
 */
 
 
@@ -49,7 +45,7 @@ final class ABCFGGCL_Grid_Gallery {
 
     private function plugin_constants() {
 
-        if( ! defined( 'ABCFGGCL_VERSION' ) ){ define( 'ABCFGGCL_VERSION', '1.0.7' ); }
+        if( ! defined( 'ABCFGGCL_VERSION' ) ){ define( 'ABCFGGCL_VERSION', '1.0.8' ); }
         // Plugin Folder URL
         if( ! defined( 'ABCFGGCL_PLUGIN_URL' ) ){ define( 'ABCFGGCL_PLUGIN_URL', plugin_dir_url( __FILE__ ) );}
         // Plugin Folder Path
@@ -94,10 +90,11 @@ final class ABCFGGCL_Grid_Gallery {
 
     //Remove view  and quick edit from that you see when you mouse over a post.
     function remove_post_edit_links( $actions ){
-        if( get_post_type() === 'abcfggcl_post_type' )
+        if( get_post_type() === 'abcfggcl_post_type' ){
             unset( $actions['view'] );
             unset( $actions['inline hide-if-no-js'] );
-        return $actions;
+            return $actions;
+        }
     }
 
     public function load_textdomain() {
