@@ -1,12 +1,12 @@
 === Grid Gallery with Custom Links ===
 Author URI: http://www.abcfolio.com
 Plugin URI: http://abcfolio.com/help/grid-gallery-with-custom-links/
-Contributors: jasiu
-Tags: gallery, galleries, responsive, responsive gallery, grid, grid gallery, gallery links, image links, abcfolio
+Contributors: abcfolio
+Tags: gallery, galleries, responsive, responsive gallery, grid, grid gallery, gallery links, image links, custom links
 Requires at least: 3.5
-Tested up to: 3.8
+Tested up to: 3.9
 
-Stable tag: 1.0.8
+Stable tag: 1.1.0
 License: GPLv2 or later
 
 Displays gallery images in a grid. You can add custom URLs and captions.
@@ -68,6 +68,12 @@ How to install **Grid Gallery with Custom Links**
 That’s it! Enjoy using the plugin.
 
 == Changelog ==
+
+= 1.1.0 =
+* Fix: Updated post_row_actions to fix removal of shortcuts from post list.
+
+= 1.0.9 =
+* Fix: Added check for empty GGCL post and warning message: (WordPress Gallery shortcode is missing).
 
 = 1.0.8 =
 * Fix: Removed extra slash from CSS path.

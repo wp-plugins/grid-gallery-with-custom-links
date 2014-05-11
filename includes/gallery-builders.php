@@ -5,7 +5,7 @@
 function abcfggcl_gbldrs_get_pg($customPostID) {
 
     $divItems = '';
-    $cls = 'ggclCtnr gg108';
+    $cls = 'ggclCtnr gg111';
     $style = '';
 
     $optns = get_post_custom( $customPostID );
@@ -40,10 +40,10 @@ function abcfggcl_gbldrs_get_items($postID, $layout, $imgFr, $imgAn, $itemTM, $i
     $pCnt = $post->post_content;
 
     $out = '';
-    if(empty($pCnt)) return $out;
+    //if(empty($pCnt)) return $out;
     $gImgs = abcfggcl_gbldrs_get_gallery_imgs( $postID, $pCnt, $imgSize );
 
-    if(empty($gImgs)) return;
+    if(empty($gImgs)) {return;}
 
     foreach($gImgs as $gImg){
         $imgUrl = $gImg['imgUrl'];
@@ -158,8 +158,12 @@ function abcfggcl_gbldrs_txt_align( $layout, $txtCntrCls ){
 
 
 function abcfggcl_gbldrs_get_gallery_imgs( $postID, $pCnt, $imgSize ) {
-
     $pCnt = trim($pCnt);
+
+    if(empty($pCnt)){
+        echo __('WordPress Gallery shortcode is missing. Please add WordPress Gallery to the Grid Gallery.', 'abcfggcl-td');
+        return array();
+    }
     $g = '[gallery';
     if(substr($pCnt, 0, 8) != $g) {
         $pos = strpos($pCnt, $g);
