@@ -24,7 +24,7 @@ function abcfggcl_lib_htmlbldr_css_style( $style ) {
 //---------------------------------------------------------------------
 function abcfggcl_lib_htmlbldr_img_tag($imgID, $src, $alt, $imgTitle, $imgW=0, $imgH=0, $cls='', $style='') {
 
-    if (empty($src)) return '';
+    if (empty($src)) {return '';}
     $imgWH = '';
     if ($imgW > 0 && $imgH > 0) { $imgWH = ' width="' . $imgW . '" height="' . $imgH . '"'; }
     if (!empty($imgID)){ $imgID = ' id="' . $imgID . '"'; }

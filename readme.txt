@@ -6,7 +6,7 @@ Tags: gallery, galleries, responsive, responsive gallery, grid, grid gallery, ga
 Requires at least: 3.5
 Tested up to: 3.9
 
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 
 Displays gallery images in a grid. You can add custom URLs and captions.
@@ -14,6 +14,9 @@ Displays gallery images in a grid. You can add custom URLs and captions.
 == Description ==
 
 **Grid Gallery with Custom Links** displays gallery images in a grid.
+
+= Live Previews = [http://abcfolio.com/help/wordpress-plugin-grid-gallery-with-custom-links-live-preview/](http://abcfolio.com/help/wordpress-plugin-grid-gallery-with-custom-links-live-preview/)
+
 
 With the Grid Gallery, you can easily add elegant navigation option to any theme.
 
@@ -68,6 +71,9 @@ How to install **Grid Gallery with Custom Links**
 That’s it! Enjoy using the plugin.
 
 == Changelog ==
+
+= 1.2.0 =
+* Tweak: Modified shortcode section.
 
 = 1.1.0 =
 * Fix: Updated post_row_actions to fix removal of shortcuts from post list.

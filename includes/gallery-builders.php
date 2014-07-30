@@ -2,11 +2,16 @@
 /**
  * Gallery builders
 */
-function abcfggcl_gbldrs_get_pg($customPostID) {
+function abcfggcl_gbldrs_get_pg($args) {
+
+    $customPostID = $args['id'];
+    $pversion = ' gg_' . $args['pversion'];
 
     $divItems = '';
-    $cls = 'ggclCtnr gg111';
-    $style = '';
+    //$cls = 'ggclCtnr gg111';
+    $cls = 'ggclCtnr';
+
+    //$style = '';
 
     $optns = get_post_custom( $customPostID );
     $cntrH = isset( $optns['_abcfggcl_cntr_h'] ) ? esc_attr( $optns['_abcfggcl_cntr_h'][0] ) : '';
@@ -29,7 +34,7 @@ function abcfggcl_gbldrs_get_pg($customPostID) {
     $style = abcfggcl_lib_css_wh($cntrW, $cntrH) . abcfggcl_lib_css_ptl($cntrTM, $cntrLM);
     $style = abcfggcl_lib_css_style_tag($style);
 
-    if(!empty($items)) { $divItems = '<div id="equalH" class="' . $cls . '"' . $style . '>' . $items . '<div class="ggclClr"></div></div>'; }
+    if(!empty($items)) { $divItems = '<div id="equalH" class="' . $cls . $pversion .'"' . $style . '>' . $items . '<div class="ggclClr"></div></div>'; }
     $js = '<script type="text/javascript">jQuery(window).load(function(){ jQuery("#equalH").equalHs(); });</script>';
     return $divItems . ' ' . $js;
 }

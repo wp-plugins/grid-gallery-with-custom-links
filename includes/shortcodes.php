@@ -2,12 +2,17 @@
 /**
  * Process shortcode
 */
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'ABSPATH' ) ){exit;}
 
 function abcfggcl_scodes_add( $args ) {
     wp_enqueue_script( 'ggcl-equal-heights-js' );
-    $args = shortcode_atts( abcfggcl_scodes_defaults(), $args );
-    return abcfggcl_gbldrs_get_pg((int) $args['id']);
+    //$args = shortcode_atts( abcfggcl_scodes_defaults(), $args );
+
+    $ver = str_replace('.', '' , ABCFGGCL_VERSION);
+    $args = shortcode_atts( array( 'id' => '0', 'pversion' => $ver ), $args );
+    return abcfggcl_gbldrs_get_pg($args);
+
+    //return abcfggcl_gbldrs_get_pg((int) $args['id']);
 }
 add_shortcode( 'abcf-grid-gallery-custom-links', 'abcfggcl_scodes_add' );
 
