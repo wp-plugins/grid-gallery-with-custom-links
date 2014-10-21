@@ -20,7 +20,7 @@ Displays gallery images in a grid. You can add custom URLs and captions.
 
 With the Grid Gallery, you can easily add elegant navigation option to any theme.
 
-* Grid Gallery can be customized.
+* Easy to customize.
 * Compatible with all browsers.
 * Works great on mobile devices.
 * You can insert the gallery shortcode into any page or post you want.
