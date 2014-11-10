@@ -26,7 +26,7 @@ With the Grid Gallery, you can easily add elegant navigation option to any theme
 * Easy to add to any page or post - just insert a shortcode.
 * You can add custom links and captions to each of the images.
 
-This plugin requires [**Media Library Custom Fields**](http://abcfolio.com/help/wordpress-media-library-custom-fields/) plugin to be installed.
+Requires [**Media Library Custom Fields**](http://abcfolio.com/help/wordpress-media-library-custom-fields/) plugin to be installed.
 
 If you have a WordPress gallery of images and need to link them to other pages, this plugin is for you!
 
