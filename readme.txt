@@ -9,7 +9,7 @@ Tested up to: 4.0
 Stable tag: 1.2.1
 License: GPLv2 or later
 
-Displays gallery in a grid. You can add custom links to images and captions.
+Displays gallery in a grid. You can add custom links to all images and captions.
 
 == Description ==
 
