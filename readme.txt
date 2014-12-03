@@ -45,7 +45,7 @@ Full documentation at [http://abcfolio.com/help/grid-gallery-with-custom-links/]
 * Different image sizes. [Preview.](http://abcfolio.com/demos/wordpress-grid-gallery/ggp-different-heights/)
 * Crossfade on hover. [Preview.](http://abcfolio.com/demos/wordpress-grid-gallery/ggclp-hover-fade/)
 * You can have multiple instances of the Grid Gallery on a page.
-* You can add JavaScript to onclick event.
+* You can add JavaScript to onclick event to integrate with Google Analytics events.
 * Completely customizable. You can add your own custom CSS file.
 * Priority support.
 
