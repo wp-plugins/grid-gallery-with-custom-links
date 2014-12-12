@@ -21,8 +21,7 @@ Displays gallery in a grid. You can add custom links to all images and captions.
 With the Grid Gallery, you can easily add elegant navigation option to any theme.
 
 * Easy to customize.
-* Compatible with all browsers.
-* Works great on mobile devices.
+* Compatible with all browsers and mobile devices.
 * Easy to add to any page or post - just insert a shortcode.
 * You can add custom links and captions to each of the images.
 
