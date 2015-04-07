@@ -4,9 +4,9 @@ Plugin URI: http://abcfolio.com/help/grid-gallery-with-custom-links/
 Contributors: abcfolio
 Tags: gallery, galleries, responsive, responsive gallery, grid, grid gallery, gallery links, image links, custom links
 Requires at least: 3.5
-Tested up to: 4.0
+Tested up to: 4.1.1
 
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 License: GPLv2 or later
 
 Displays gallery in a grid. You can add custom links to all images and captions.
@@ -73,6 +73,9 @@ How to install **Grid Gallery with Custom Links**
 That’s it! Enjoy using the plugin.
 
 == Changelog ==
+
+= 1.2.2 20150407 =
+* Update: Tested with WordPress 4.1.1.
 
 = 1.2.1 20141013 =
 * Update: Tested compatibility with WordPress 4.0.
